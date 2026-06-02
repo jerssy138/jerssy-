@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0a192f;
+    color:white;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:70px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#333;
+    border: #fff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap: 35px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav a:hover{
+    color:#000;
+}
+
+.btn{
+    text-decoration:none;
+    background:#112240;
+    color:#fff;
+    padding:12px 25px;
+    border-radius:30px;
+}
+
+
+.contact-page{
+    min-height:100vh;
+    padding:60px 10%;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.header h1{
+    font-size:3rem;
+    color:#64b5ff;
+    margin-bottom:10px;
+}
+
+.header p{
+    color:#cfd8dc;
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns:1fr 1.5fr;
+    gap:40px;
+}
+
+.contact-info{
+    background:#112240;
+    padding:30px;
+    border-radius:12px;
+}
+
+.contact-info h2{
+    color:#64b5ff;
+    margin-bottom:25px;
+}
+
+.info-box{
+    margin-bottom:25px;
+}
+
+.info-box h3{
+    color:#64b5ff;
+    margin-bottom:8px;
+}
+
+.info-box p{
+    color:white;
+    font-size:1rem;
+}
+
+.contact-form{
+    background:#112240;
+    padding:30px;
+    border-radius:12px;
+}
+
+.contact-form h2{
+    color:#64b5ff;
+    margin-bottom:25px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#1b3358;
+    color:white;
+    outline:none;
+}
+
+input::placeholder,
+textarea::placeholder{
+    color:#cfd8dc;
+}
+
+button{
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#1e88e5;
+    color:white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#42a5f5;
+}
+
+@media(max-width:768px){
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+    .header h1{
+        font-size:2.3rem;
+    }
+}
